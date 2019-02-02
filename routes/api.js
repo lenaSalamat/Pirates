@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 //get models;
-const Pirat = require('../model/pirat');
+const Pirate = require('../model/Pirate');
 
-Pirat.methods(['get', 'post', 'put', 'delete']);
-Pirat.register(router, '/pirates');
+Pirate.methods(['get', 'post', 'put', 'delete']);
+Pirate.register(router, '/pirates');
 
 module.exports = router;
